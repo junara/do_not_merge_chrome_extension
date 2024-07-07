@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Do Not Push GitHub Merge Button</title>
+</head>
+<body style="width:350px">
+<img src="icon.png" alt="icon" style="width: 150px; margin: 0 100px;">
+<h2>Do Not Push GitHub Merge Button</h2>
+<div>
+    <input id="do-not-merge-active" type="checkbox">
+    <label for="do-not-merge-active">以下の時間から24時まではマージボタンを押せない</label>
+</div>
+<div>
+    <label for="do-not-merge-from">
+        時間を入力してください
+    </label>
+    <input id="do-not-merge-from" type="number" max="23" min="0" >
+</div>
+<div>
+    <div id="status"></div>
+    <button id="save">
+        Save
+    </button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
